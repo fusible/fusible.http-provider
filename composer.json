@@ -1,0 +1,30 @@
+{
+    "name": "fusible/http-provider",
+    "description": "Service Provider for HTTP Factories",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jake johns",
+            "email": "jake@jakejohns.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "nyholm/psr7-server": "^0.3.0",
+        "php-http/discovery": "^1.6",
+        "psr/container": "^1.0",
+        "psr/http-factory": "^1.0",
+        "container-interop/service-provider": "^0.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fusible\\HttpProvider\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fusible\\HttpProvider\\": "tests/"
+        }
+    }
+}
